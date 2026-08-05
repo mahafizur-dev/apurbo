@@ -243,8 +243,17 @@
       <div class="container">
         <p class="section__eyebrow reveal">Portfolio Showcase</p>
         <h2 class="section__title reveal">Featured <span class="accent">Works</span></h2>
-        <div class="featured__grid">
-          <article class="video-card glass-card reveal">
+
+        <div class="portfolio__filters reveal" role="tablist" aria-label="Filter portfolio by category">
+          <button class="portfolio__filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="portfolio__filter" type="button" data-filter="ovc" aria-pressed="false">Commercial OVCs</button>
+          <button class="portfolio__filter" type="button" data-filter="reel" aria-pressed="false">Brand Reels</button>
+          <button class="portfolio__filter" type="button" data-filter="fashion" aria-pressed="false">Fashion Brands</button>
+        </div>
+
+        <div class="portfolio__grid" id="portfolioGrid">
+          <!-- Commercial OVCs -->
+          <article class="video-card glass-card reveal" data-category="ovc">
             <div class="video-card__media" data-video-id="6VWH5GaXVm8">
               <img src="https://i.ytimg.com/vi/6VWH5GaXVm8/hqdefault.jpg" alt="Thumbnail — Notun Diner Pothe, Bangladesh's first entrepreneur anthem by Presswayy" loading="lazy" width="480" height="360">
               <button class="video-card__play" aria-label="Play video: Notun Diner Pothe">
@@ -257,6 +266,222 @@
               <div class="video-card__actions">
                 <span class="project-card__chips"><span>OVC</span><span>Editing</span><span>1st AC</span><span>Color Grade</span></span>
                 <a class="btn btn--primary btn--sm" href="https://youtu.be/6VWH5GaXVm8" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card glass-card reveal" data-category="ovc">
+            <div class="video-card__media" data-video-id="mglzihoJ6JY">
+              <img src="https://i.ytimg.com/vi/mglzihoJ6JY/hqdefault.jpg" alt="Thumbnail — Commercial OVC, direction and post-production" loading="lazy" width="480" height="360">
+              <button class="video-card__play" aria-label="Play video: Commercial OVC 2">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Commercial OVC — Direction &amp; Post-Production</h3>
+              <p>Full-cycle direction and post-production for a commercial OVC, from shot planning through color grading and final delivery.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>OVC</span><span>Direction</span><span>Post-Production</span></span>
+                <a class="btn btn--primary btn--sm" href="https://youtu.be/mglzihoJ6JY?si=UWhHYlNoCJewcwKF" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card glass-card reveal" data-category="ovc">
+            <div class="video-card__media" data-video-id="rhL0qI_kiHo">
+              <img src="https://i.ytimg.com/vi/rhL0qI_kiHo/hqdefault.jpg" alt="Thumbnail — Commercial OVC, direction and post-production" loading="lazy" width="480" height="360">
+              <button class="video-card__play" aria-label="Play video: Commercial OVC 3">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Commercial OVC — Direction &amp; Post-Production</h3>
+              <p>Full-cycle direction and post-production for a commercial OVC, from shot planning through color grading and final delivery.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>OVC</span><span>Direction</span><span>Post-Production</span></span>
+                <a class="btn btn--primary btn--sm" href="https://youtu.be/rhL0qI_kiHo?si=-FL-hQppPf-y0u0s" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card glass-card reveal" data-category="ovc">
+            <div class="video-card__media video-card__media--fb" data-fb-url="https://www.facebook.com/share/v/1VJKwmz6HC/">
+              <div class="fb-placeholder">
+                <svg class="fb-placeholder__icon" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+                <span>Facebook Video</span>
+              </div>
+              <button class="video-card__play" aria-label="Play video: Commercial OVC 4 (Facebook)">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Commercial OVC — Direction &amp; Post-Production</h3>
+              <p>Full-cycle direction and post-production for a commercial OVC, from shot planning through color grading and final delivery.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>OVC</span><span>Direction</span><span>Post-Production</span></span>
+                <a class="btn btn--primary btn--sm" href="https://www.facebook.com/share/v/1VJKwmz6HC/" target="_blank" rel="noopener noreferrer">Watch on Facebook</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Brand Reels -->
+          <article class="video-card glass-card reveal" data-category="reel">
+            <div class="video-card__media video-card__media--fb" data-fb-url="https://www.facebook.com/share/r/1BWmZQtgjk/">
+              <div class="fb-placeholder">
+                <svg class="fb-placeholder__icon" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+                <span>Facebook Reel</span>
+              </div>
+              <button class="video-card__play" aria-label="Play Brand Reel 1 (Facebook)">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Brand Reel — Cinematography &amp; Post-Production</h3>
+              <p>Short-form brand reel — on-set cinematography paired with full post-production for social-first delivery.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>Reel</span><span>Cinematography</span><span>Post-Production</span></span>
+                <a class="btn btn--primary btn--sm" href="https://www.facebook.com/share/r/1BWmZQtgjk/" target="_blank" rel="noopener noreferrer">Watch on Facebook</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card glass-card reveal" data-category="reel">
+            <div class="video-card__media video-card__media--fb" data-fb-url="https://www.facebook.com/share/r/1CgMmBz1YK/">
+              <div class="fb-placeholder">
+                <svg class="fb-placeholder__icon" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+                <span>Facebook Reel</span>
+              </div>
+              <button class="video-card__play" aria-label="Play Brand Reel 2 (Facebook)">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Brand Reel — Cinematography &amp; Post-Production</h3>
+              <p>Short-form brand reel — on-set cinematography paired with full post-production for social-first delivery.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>Reel</span><span>Cinematography</span><span>Post-Production</span></span>
+                <a class="btn btn--primary btn--sm" href="https://www.facebook.com/share/r/1CgMmBz1YK/" target="_blank" rel="noopener noreferrer">Watch on Facebook</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card glass-card reveal" data-category="reel">
+            <div class="video-card__media video-card__media--fb" data-fb-url="https://www.facebook.com/share/r/1Jv2zPQnwu/">
+              <div class="fb-placeholder">
+                <svg class="fb-placeholder__icon" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+                <span>Facebook Reel</span>
+              </div>
+              <button class="video-card__play" aria-label="Play Brand Reel 3 (Facebook)">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Brand Reel — Cinematography &amp; Post-Production</h3>
+              <p>Short-form brand reel — on-set cinematography paired with full post-production for social-first delivery.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>Reel</span><span>Cinematography</span><span>Post-Production</span></span>
+                <a class="btn btn--primary btn--sm" href="https://www.facebook.com/share/r/1Jv2zPQnwu/" target="_blank" rel="noopener noreferrer">Watch on Facebook</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card glass-card reveal" data-category="reel">
+            <div class="video-card__media video-card__media--fb" data-fb-url="https://www.facebook.com/share/r/1d3Ssv25fc/">
+              <div class="fb-placeholder">
+                <svg class="fb-placeholder__icon" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+                <span>Facebook Reel</span>
+              </div>
+              <button class="video-card__play" aria-label="Play Brand Reel 4 (Facebook)">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Brand Reel — Cinematography &amp; Post-Production</h3>
+              <p>Short-form brand reel — on-set cinematography paired with full post-production for social-first delivery.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>Reel</span><span>Cinematography</span><span>Post-Production</span></span>
+                <a class="btn btn--primary btn--sm" href="https://www.facebook.com/share/r/1d3Ssv25fc/" target="_blank" rel="noopener noreferrer">Watch on Facebook</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card glass-card reveal" data-category="reel">
+            <div class="video-card__media video-card__media--fb" data-fb-url="https://www.facebook.com/share/r/1BRPxZTNM4/">
+              <div class="fb-placeholder">
+                <svg class="fb-placeholder__icon" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+                <span>Facebook Reel</span>
+              </div>
+              <button class="video-card__play" aria-label="Play Brand Reel 5 (Facebook)">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Brand Reel — Cinematography &amp; Post-Production</h3>
+              <p>Short-form brand reel — on-set cinematography paired with full post-production for social-first delivery.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>Reel</span><span>Cinematography</span><span>Post-Production</span></span>
+                <a class="btn btn--primary btn--sm" href="https://www.facebook.com/share/r/1BRPxZTNM4/" target="_blank" rel="noopener noreferrer">Watch on Facebook</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card glass-card reveal" data-category="reel">
+            <div class="video-card__media video-card__media--fb" data-fb-url="https://www.facebook.com/share/r/18iQw18vUh/">
+              <div class="fb-placeholder">
+                <svg class="fb-placeholder__icon" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+                <span>Facebook Reel</span>
+              </div>
+              <button class="video-card__play" aria-label="Play Brand Reel 6 (Facebook)">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Brand Reel — Cinematography &amp; Post-Production</h3>
+              <p>Short-form brand reel — on-set cinematography paired with full post-production for social-first delivery.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>Reel</span><span>Cinematography</span><span>Post-Production</span></span>
+                <a class="btn btn--primary btn--sm" href="https://www.facebook.com/share/r/18iQw18vUh/" target="_blank" rel="noopener noreferrer">Watch on Facebook</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fashion Brands -->
+          <article class="video-card glass-card reveal" data-category="fashion">
+            <div class="video-card__media video-card__media--fb" data-fb-url="https://www.facebook.com/share/r/1EpLuRBbnS/">
+              <div class="fb-placeholder">
+                <svg class="fb-placeholder__icon" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+                <span>Facebook Reel</span>
+              </div>
+              <button class="video-card__play" aria-label="Play Fashion Brand Reel 1 (Facebook)">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Post-Production — Fashion Brand Reel</h3>
+              <p>Product-focused fashion reel, edited and graded to highlight the collection and drive engagement.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>Reel</span><span>Post-Production</span><span>Fashion</span></span>
+                <a class="btn btn--primary btn--sm" href="https://www.facebook.com/share/r/1EpLuRBbnS/" target="_blank" rel="noopener noreferrer">Watch on Facebook</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card glass-card reveal" data-category="fashion">
+            <div class="video-card__media video-card__media--fb" data-fb-url="https://www.facebook.com/share/r/1JBTFSkAhU/">
+              <div class="fb-placeholder">
+                <svg class="fb-placeholder__icon" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+                <span>Facebook Reel</span>
+              </div>
+              <button class="video-card__play" aria-label="Play Fashion Brand Reel 2 (Facebook)">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="video-card__body">
+              <h3>Post-Production — Fashion Brand Reel</h3>
+              <p>Product-focused fashion reel, edited and graded to highlight the collection and drive engagement.</p>
+              <div class="video-card__actions">
+                <span class="project-card__chips"><span>Reel</span><span>Post-Production</span><span>Fashion</span></span>
+                <a class="btn btn--primary btn--sm" href="https://www.facebook.com/share/r/1JBTFSkAhU/" target="_blank" rel="noopener noreferrer">Watch on Facebook</a>
               </div>
             </div>
           </article>

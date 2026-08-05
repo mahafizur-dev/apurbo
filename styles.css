@@ -534,13 +534,40 @@ a:hover { text-decoration: underline; }
 }
 .project-card:hover .project-card__chips span { border-color: var(--accent); color: var(--accent); }
 
-/* ---------- Featured video ---------- */
-.featured__grid {
+/* ---------- Featured video / Portfolio gallery ---------- */
+.portfolio__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.portfolio__filter {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition), background var(--transition), transform var(--transition);
+}
+.portfolio__filter:hover { border-color: var(--accent); color: var(--text); }
+.portfolio__filter.active {
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  border-color: transparent;
+  color: var(--accent-contrast);
+  transform: translateY(-1px);
+}
+
+.portfolio__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 640px));
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 28px;
 }
+.portfolio__grid .video-card.is-hidden { display: none; }
+
 .video-card { padding: 0; overflow: hidden; }
 
 .video-card__media {
@@ -560,6 +587,21 @@ a:hover { text-decoration: underline; }
 }
 .video-card__media img { transition: transform 0.5s ease, opacity var(--transition); }
 .video-card__media:hover img { transform: scale(1.05); opacity: 0.85; }
+
+.video-card__media--fb { background: linear-gradient(135deg, #1877f2, #0b5fce); }
+.fb-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  transition: opacity var(--transition);
+}
+.video-card__media--fb:hover .fb-placeholder { opacity: 0.85; }
+.fb-placeholder span { font-size: 0.85rem; font-weight: 600; }
 
 .video-card__play {
   position: absolute;
