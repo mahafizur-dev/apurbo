@@ -158,27 +158,6 @@
       });
     });
 
-  /* ---------- Lazy Facebook video embed (loads iframe only on click) ---------- */
-  document
-    .querySelectorAll(".video-card__media[data-fb-url]")
-    .forEach(function (media) {
-      media.addEventListener("click", function () {
-        if (media.querySelector("iframe")) return;
-        var url = media.getAttribute("data-fb-url");
-        var iframe = document.createElement("iframe");
-        iframe.src =
-          "https://www.facebook.com/plugins/video.php?height=314&href=" +
-          encodeURIComponent(url) +
-          "&show_text=false&width=560&autoplay=true";
-        iframe.title = "Facebook video player";
-        iframe.allow = "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share";
-        iframe.allowFullscreen = true;
-        media.innerHTML = "";
-        media.appendChild(iframe);
-        media.style.cursor = "default";
-      });
-    });
-
   /* ---------- Portfolio category filter ---------- */
   var filterButtons = document.querySelectorAll(".portfolio__filter");
   var portfolioCards = document.querySelectorAll("#portfolioGrid [data-category]");
